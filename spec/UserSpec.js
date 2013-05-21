@@ -13,7 +13,7 @@ describe("A User", function() {
   });
 
   it("should know how to print the entire name", function() {
-    expect(user.full_name()).toEqual("Dan Garland");
+    expect(user.full_name()).toEqual("Joe Simoes");
   });
 
 });

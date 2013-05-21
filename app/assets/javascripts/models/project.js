@@ -7,13 +7,18 @@ app.models.Project = Backbone.Model.extend({
   },
 
   updateTitle: function() {
-    this.attributes.title += " Changed";
+    this.attributes.title();
   },
 
-  validate: function() {
-    if(this.attributes.url === "") {
-      return "Argh!";
-    }
+  updateDescription: function() {
+    this.attributes.description();
   }
+
+
+  // validate: function() {
+  //   if(this.attributes.url === "") {
+  //     return "Argh!";
+  //   }
+  // }
 
 });
